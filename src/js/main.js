@@ -1,31 +1,41 @@
 import '../styles/main.css';
-import { formatPrice } from './utils.js';
 
 const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav-links');
+const progress = document.querySelector('[data-scroll-progress]');
 
 function onScroll() {
   if (!header) return;
-  header.classList.toggle('is-scrolled', window.scrollY > 24);
+  const y = window.scrollY;
+  header.classList.toggle('is-scrolled', y > 16);
+  header.classList.toggle('is-compact', y > 120);
+  if (progress) {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = max > 0 ? Math.min(100, (y / max) * 100) : 0;
+    progress.style.width = `${pct}%`;
+  }
 }
 
 onScroll();
 window.addEventListener('scroll', onScroll, { passive: true });
 
 if (toggle && nav) {
-  toggle.addEventListener('click', () => {
-    const open = nav.classList.toggle('is-open');
+  const setOpen = (open) => {
+    nav.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
+    document.body.classList.toggle('nav-open', open);
     document.body.style.overflow = open ? 'hidden' : '';
-  });
+  };
+
+  toggle.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
 
   nav.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      toggle.setAttribute('aria-expanded', 'false');
-      document.body.style.overflow = '';
-    });
+    link.addEventListener('click', () => setOpen(false));
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setOpen(false);
   });
 }
 
@@ -40,11 +50,19 @@ if (reveals.length && 'IntersectionObserver' in window) {
         }
       });
     },
-    { threshold: 0.14, rootMargin: '0px 0px -8% 0px' }
+    { threshold: 0.12, rootMargin: '0px 0px -6% 0px' }
   );
   reveals.forEach((el) => io.observe(el));
 } else {
   reveals.forEach((el) => el.classList.add('is-visible'));
 }
 
-export { formatPrice };
+/* Soft fade-in for images as they load */
+document.querySelectorAll('img[data-fade]').forEach((img) => {
+  const show = () => img.classList.add('is-loaded');
+  if (img.complete) show();
+  else img.addEventListener('load', show, { once: true });
+});
+
+const year = document.querySelector('[data-year]');
+if (year) year.textContent = String(new Date().getFullYear());

@@ -13,7 +13,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="page-enter">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" data-scroll-progress></div>
     <header class="site-header is-solid">
       <a class="brand" href="/">
         <img class="brand-mark" src="/assets/brand/logo-profile.jpg" alt="Nativa tree emblem" />
@@ -28,11 +30,10 @@
         <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/about.html">Our Story</a></li>
         <li><a href="/visit.html" aria-current="page">Visit</a></li>
-        <li><a class="nav-cta" href="/menu.html">Explore Menu</a></li>
       </ul>
     </header>
 
-    <main>
+    <main id="main">
       <header class="page-hero">
         <h1>Visit Nativa.</h1>
         <p>216 Woodside Avenue, Newton — come for coffee, stay for the feeling.</p>
@@ -41,27 +42,31 @@
       <section class="section" style="padding-top: 0;">
         <div class="section-narrow story-grid">
           <div class="reveal">
-            <img src="/assets/interior/post_01_DdcyeFjjC6F_0.jpg" alt="Nativa Coffee Bar exterior mood" />
+            <img data-fade src="/assets/interior/post_01_DdcyeFjjC6F_2.jpg" alt="Nativa bar and spirit shelves" />
           </div>
           <div class="reveal reveal-delay-1">
+            <div class="organic-rule"></div>
             <h2>Hours &amp; location</h2>
+            <p class="hours-status">Google Maps does not list public hours yet</p>
             <p style="color: var(--ink-soft);">
-              We’re open for daytime coffee and bakery service through evening plates and cocktails.
-              Hours may shift for live music and special events — follow
-              <a href="https://www.instagram.com/nativacoffeebar/" style="color: var(--olive-dark); text-decoration: underline;">@nativacoffeebar</a>
-              for the latest.
+              As of now, Google does not publish daily hours for Nativa Coffee Bar. Below is our current service window
+              based on the floor schedule — always confirm on
+              <a href="https://www.instagram.com/nativacoffeebar/" style="color: var(--olive-dark); text-decoration: underline;">Instagram</a>
+              or
+              <a href="https://maps.google.com/?q=Nativa+Coffee+Bar+216+Woodside+Ave,+Newton,+NJ+07860" style="color: var(--olive-dark); text-decoration: underline;">Google Maps</a>
+              before you come.
             </p>
             <table class="hours-table">
               <tbody>
-                <tr><th>Tuesday – Thursday</th><td>11:30 AM – 9:00 PM</td></tr>
+                <tr><th>Tuesday – Thursday</th><td>11:30 AM – Close</td></tr>
                 <tr><th>Friday – Sunday</th><td>9:00 AM – 10:00 PM</td></tr>
-                <tr><th>Monday</th><td>Check Instagram for updates</td></tr>
+                <tr><th>Monday</th><td>Check Instagram / Google</td></tr>
                 <tr><th>Breakfast</th><td>Available until 3:00 PM</td></tr>
               </tbody>
             </table>
             <p style="margin: 0 0 1.25rem;"><strong>216 Woodside Ave, Newton, NJ 07860</strong></p>
             <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
-              <a class="btn btn-primary" href="https://maps.google.com/?q=216+Woodside+Ave,+Newton,+NJ+07860" target="_blank" rel="noopener">Get directions</a>
+              <a class="btn btn-primary" href="https://maps.google.com/?q=Nativa+Coffee+Bar+216+Woodside+Ave,+Newton,+NJ+07860" target="_blank" rel="noopener">Open in Google Maps</a>
               <a class="btn btn-ghost" href="/menu.html">Browse menu</a>
             </div>
           </div>
@@ -75,7 +80,7 @@
             title="Map of Nativa Coffee Bar"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://maps.google.com/maps?q=216%20Woodside%20Ave%2C%20Newton%2C%20NJ%2007860&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=Nativa%20Coffee%20Bar%20216%20Woodside%20Ave%2C%20Newton%2C%20NJ%2007860&t=&z=15&ie=UTF8&iwloc=&output=embed"
           ></iframe>
         </div>
       </section>
@@ -98,7 +103,7 @@
           <h4>Connect</h4>
           <a href="https://www.instagram.com/nativacoffeebar/" target="_blank" rel="noopener">Instagram</a>
           <a href="/assets/menu/nativa-menu.pdf" target="_blank" rel="noopener">Download PDF menu</a>
-          <a href="https://maps.google.com/?q=216+Woodside+Ave,+Newton,+NJ+07860" target="_blank" rel="noopener">Google Maps</a>
+          <a href="https://maps.google.com/?q=Nativa+Coffee+Bar+216+Woodside+Ave,+Newton,+NJ+07860" target="_blank" rel="noopener">Google Maps</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -108,8 +113,5 @@
     </footer>
 
     <script type="module" src="/src/js/home.js"></script>
-    <script>
-      document.querySelector('[data-year]').textContent = new Date().getFullYear();
-    </script>
   </body>
 </html>

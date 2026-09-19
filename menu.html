@@ -16,7 +16,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="page-enter">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="scroll-progress" data-scroll-progress></div>
     <header class="site-header is-solid">
       <a class="brand" href="/">
         <img class="brand-mark" src="/assets/brand/logo-profile.jpg" alt="Nativa tree emblem" />
@@ -33,17 +35,15 @@
         <li><a href="/gallery.html">Gallery</a></li>
         <li><a href="/about.html">Our Story</a></li>
         <li><a href="/visit.html">Visit</a></li>
-        <li><a class="nav-cta" href="/visit.html">Visit us</a></li>
       </ul>
     </header>
 
-    <main>
+    <main id="main">
       <header class="page-hero">
         <span class="pill">Official menu · prices current</span>
         <h1 style="margin-top: 1rem;">The menu.</h1>
         <p>
-          Tap any item to open details and photos. Filter by coffee, breakfast, lunch, or the bar —
-          the same architecture guests use in the room.
+          Browse by category. Open any item for details and pricing — photos appear only when we have a verified dish shot.
         </p>
       </header>
 
@@ -60,8 +60,8 @@
       <div class="modal-wrap">
         <button class="modal-close" type="button" data-modal-close aria-label="Close">×</button>
         <div class="modal">
-          <div class="modal-media">
-            <img data-modal-image alt="" />
+          <div class="modal-media" data-modal-media hidden>
+            <img data-modal-image alt="" hidden />
           </div>
           <div class="modal-body">
             <h3 id="modal-title" data-modal-title></h3>

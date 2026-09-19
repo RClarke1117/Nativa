@@ -5,6 +5,7 @@ import { formatPrice } from './utils.js';
 const listRoot = document.querySelector('[data-menu-root]');
 const filterRoot = document.querySelector('[data-menu-filters]');
 const modal = document.querySelector('[data-modal]');
+const modalMedia = document.querySelector('[data-modal-media]');
 const modalTitle = document.querySelector('[data-modal-title]');
 const modalDesc = document.querySelector('[data-modal-desc]');
 const modalPrice = document.querySelector('[data-modal-price]');
@@ -37,14 +38,12 @@ function renderSections(activeCategory = 'all') {
             : `<div class="menu-thumb placeholder" aria-hidden="true"></div>`;
           const featured = item.featured ? `<span class="tag-featured">Signature</span>` : '';
           const desc = item.desc ? `<p>${item.desc}</p>` : '';
-          const interactive = hasImage || item.desc;
           return `
             <button
               type="button"
-              class="menu-item ${interactive ? 'has-image' : ''}"
+              class="menu-item ${hasImage ? 'has-photo' : ''}"
               data-section="${section.id}"
               data-index="${index}"
-              ${interactive ? '' : 'tabindex="-1"'}
             >
               ${thumb}
               <div class="menu-item-body">
@@ -58,7 +57,7 @@ function renderSections(activeCategory = 'all') {
         .join('');
 
       return `
-        <section class="menu-section reveal is-visible" id="${section.id}">
+        <section class="menu-section" id="${section.id}">
           <div class="menu-section-title">
             <h2>${section.title}</h2>
           </div>
@@ -69,7 +68,9 @@ function renderSections(activeCategory = 'all') {
     })
     .join('');
 
-  listRoot.querySelectorAll('.menu-item').forEach((btn) => {
+  listRoot.querySelectorAll('.menu-item').forEach((btn, i) => {
+    btn.style.setProperty('--i', String(i % 12));
+    btn.classList.add('menu-item-enter');
     btn.addEventListener('click', () => {
       const section = menuSections.find((s) => s.id === btn.dataset.section);
       const item = section?.items[Number(btn.dataset.index)];
@@ -82,18 +83,24 @@ function openModal(item, sectionTitle) {
   if (!modal) return;
   modalTitle.textContent = item.name;
   modalDesc.textContent = item.desc || `${sectionTitle} · Nativa Coffee Bar`;
-  modalPrice.textContent = formatPrice(item) || 'Market price';
+  modalPrice.textContent = formatPrice(item) || 'Ask your server';
+
   if (item.image) {
-    modalImage.hidden = false;
-    modalImage.src = item.image;
+    modalMedia?.removeAttribute('hidden');
+    modalImage.removeAttribute('hidden');
     modalImage.alt = item.name;
+    modalImage.src = item.image;
   } else {
-    modalImage.hidden = true;
+    modalMedia?.setAttribute('hidden', '');
+    modalImage.setAttribute('hidden', '');
     modalImage.removeAttribute('src');
+    modalImage.alt = '';
   }
+
   modal.classList.add('is-open');
   modal.setAttribute('aria-hidden', 'false');
   document.body.style.overflow = 'hidden';
+  modalClose?.focus();
 }
 
 function closeModal() {
@@ -101,6 +108,9 @@ function closeModal() {
   modal.classList.remove('is-open');
   modal.setAttribute('aria-hidden', 'true');
   document.body.style.overflow = '';
+  modalImage.removeAttribute('src');
+  modalImage.alt = '';
+  modalMedia?.setAttribute('hidden', '');
 }
 
 if (filterRoot) {
@@ -121,6 +131,7 @@ if (filterRoot) {
     filterRoot.querySelectorAll('.filter-btn').forEach((el) => el.classList.remove('is-active'));
     btn.classList.add('is-active');
     renderSections(btn.dataset.filter);
+    btn.scrollIntoView({ inline: 'center', block: 'nearest', behavior: 'smooth' });
   });
 }
 
