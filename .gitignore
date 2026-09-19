@@ -5,3 +5,4 @@ dist
 nativa-menu-full.txt
 .wrangler
 .dev.vars
+.tmp-check/
