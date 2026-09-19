@@ -1111,10 +1111,20 @@ body.nav-open .nav-toggle {
   padding-top: 1.25rem;
   border-top: 1px solid rgba(250, 247, 241, 0.12);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
   font-size: 0.85rem;
+}
+
+.footer-bottom a {
+  color: rgba(250, 247, 241, 0.72);
+  text-decoration: none;
+  transition: color 0.2s var(--ease);
+}
+
+.footer-bottom a:hover {
+  color: var(--parchment);
 }
 
 @media (max-width: 760px) {
