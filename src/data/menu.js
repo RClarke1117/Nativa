@@ -11,8 +11,7 @@ export const menuCategories = [
   { id: 'lunch', label: 'Lunch & Dinner', group: 'food' },
   { id: 'cocktails', label: 'Cocktails', group: 'bar' },
   { id: 'wine-beer', label: 'Wine & Beer', group: 'bar' },
-  { id: 'spirits', label: 'Spirits', group: 'bar' },
-];
+  { id: 'spirits', label: 'Spirits', group: 'bar' } ];
 
 export const menuSections = [
   {
@@ -29,8 +28,7 @@ export const menuSections = [
       { name: 'Latte', price: '4.45', priceAlt: '4.95' },
       { name: 'Cortado', price: '4.45', priceAlt: '4.95' },
       { name: 'Macchiato', price: '4.45', priceAlt: '4.95' },
-      { name: 'Hot Chocolate', price: '4.50', priceAlt: '5.00' },
-    ] },
+      { name: 'Hot Chocolate', price: '4.50', priceAlt: '5.00' } ] },
   {
     id: 'non-dairy',
     category: 'coffee',
@@ -39,8 +37,7 @@ export const menuSections = [
     items: [
       { name: 'Almond Milk', desc: 'Plant-based swap' },
       { name: 'Oat Milk', desc: 'Plant-based swap' },
-      { name: 'Coconut Milk', desc: 'Plant-based swap' },
-    ] },
+      { name: 'Coconut Milk', desc: 'Plant-based swap' } ] },
   {
     id: 'tea-bar',
     category: 'coffee',
@@ -60,8 +57,7 @@ export const menuSections = [
       { name: 'Jasmine Tea', price: '3.50', priceAlt: '4.00' },
       { name: 'Chamomile Medley Tea', price: '3.50', priceAlt: '4.00' },
       { name: 'Black Tea', price: '3.50', priceAlt: '4.00' },
-      { name: 'Mate Cocido', price: '3.50', priceAlt: '4.00' },
-    ] },
+      { name: 'Mate Cocido', price: '3.50', priceAlt: '4.00' } ] },
   {
     id: 'matcha',
     category: 'coffee',
@@ -77,8 +73,7 @@ export const menuSections = [
       { name: 'Strawberry Matcha', price: '6.95', priceAlt: '7.50' },
       { name: 'Taro Matcha Latte', price: '6.95', priceAlt: '7.50' },
       { name: 'Honey Lime Matcha', price: '6.95', priceAlt: '7.50' },
-      { name: 'Dirty Matcha Latte', price: '6.25', priceAlt: '6.75' },
-    ] },
+      { name: 'Dirty Matcha Latte', price: '6.25', priceAlt: '6.75' } ] },
   {
     id: 'iced-lattes',
     category: 'coffee',
@@ -87,8 +82,7 @@ export const menuSections = [
       { name: 'Mocha Latte', price: '6.25', priceAlt: '6.75' },
       { name: 'Pistachio Latte', price: '6.25', priceAlt: '6.75' },
       { name: 'Taro Latte', price: '6.25', priceAlt: '6.75' },
-      { name: 'Chai Latte', price: '6.95', priceAlt: '7.50' },
-    ] },
+      { name: 'Chai Latte', price: '6.95', priceAlt: '7.50' } ] },
   {
     id: 'frappes',
     category: 'coffee',
@@ -99,8 +93,7 @@ export const menuSections = [
       { name: 'Mango', price: '7.00', priceAlt: '8.00' },
       { name: 'Strawberry', price: '7.00', priceAlt: '8.00' },
       { name: 'Chocolate', price: '7.00', priceAlt: '8.00' },
-      { name: 'Hazelnut', price: '7.00', priceAlt: '8.00' },
-    ] },
+      { name: 'Hazelnut', price: '7.00', priceAlt: '8.00' } ] },
   {
     id: 'nativa-drinks',
     category: 'specialty',
@@ -118,8 +111,7 @@ export const menuSections = [
       { name: 'Ice Strawberry Taro Milk', price: '6.95', priceAlt: '7.50' },
       { name: 'Ice Blueberry Taro Milk', price: '6.95', priceAlt: '7.50' },
       { name: 'Tres Leches Latte', price: '6.95', priceAlt: '7.50', featured: true },
-      { name: 'Tiramisu Latte', price: '6.95', priceAlt: '7.50' },
-    ] },
+      { name: 'Tiramisu Latte', price: '6.95', priceAlt: '7.50' } ] },
   {
     id: 'refreshers',
     category: 'cool',
@@ -128,20 +120,18 @@ export const menuSections = [
       { name: 'Mango Dragon Fruit', desc: 'With green tea', price: '6.00', priceAlt: '6.50' },
       { name: 'Strawberry Açaí', desc: 'With green tea', price: '6.00', priceAlt: '6.50' },
       { name: 'Blue Coconut Lemonade', price: '6.00', priceAlt: '6.50' },
-      { name: 'Butterfly Lemon Mint', price: '6.00', priceAlt: '6.50' },
-    ] },
+      { name: 'Butterfly Lemon Mint', price: '6.00', priceAlt: '6.50' } ] },
   {
     id: 'smoothies',
     category: 'cool',
     title: 'Smoothies',
     items: [
-      { name: 'Mellow', desc: 'Açaí, strawberry, banana, honey & coconut milk', price: '8.00', priceAlt: '9.00', image: '/assets/food/post_11_DdJld8VlbYY_1.jpg' },
+      { name: 'Mellow', desc: 'Açaí, strawberry, banana, honey & coconut milk', price: '8.00', priceAlt: '9.00' },
       { name: 'Tropical', desc: 'Mango, passion fruit, banana & whole milk', price: '8.00', priceAlt: '9.00' },
       { name: 'Green', desc: 'Spinach, kale, apple, celery, ginger, pineapple & lemon', price: '8.00', priceAlt: '9.00' },
       { name: 'Protein', desc: 'Peanut butter, banana, almond milk, honey & cocoa protein powder', price: '8.00', priceAlt: '9.00' },
       { name: 'Cielo Patagónico', desc: 'Coconut water, banana, pineapple, mango & spirulina', price: '8.00', priceAlt: '9.00', featured: true },
-      { name: 'Nativa', desc: 'Peach, raspberry, strawberry, banana, honey & coconut milk', price: '8.00', priceAlt: '9.00' },
-    ] },
+      { name: 'Nativa', desc: 'Peach, raspberry, strawberry, banana, honey & coconut milk', price: '8.00', priceAlt: '9.00' } ] },
   {
     id: 'lemonades',
     category: 'cool',
@@ -157,8 +147,7 @@ export const menuSections = [
       { name: 'Mint Lemonade (Frozen)', price: '5.25', priceAlt: '5.75' },
       { name: 'Pink Lemonade (Frozen)', price: '5.25', priceAlt: '5.75' },
       { name: 'Coconut Lemonade (Frozen)', price: '7.50', priceAlt: '8.25' },
-      { name: 'Piña Colada (Frozen)', price: '7.50', priceAlt: '8.25' },
-    ] },
+      { name: 'Piña Colada (Frozen)', price: '7.50', priceAlt: '8.25' } ] },
   {
     id: 'fall-specials',
     category: 'fall',
@@ -170,8 +159,7 @@ export const menuSections = [
       { name: 'Pear Blossom', desc: 'Green tea, pear & apple syrup', featured: true },
       { name: 'Fall For Me', desc: 'Pumpkin spice cold foam, vanilla syrup, cold brew, cinnamon', featured: true },
       { name: 'Matcha About It', desc: 'Matcha, milk, brown sugar & maple syrup', featured: true },
-      { name: 'Sweater Weather', desc: 'Butter pecan syrup latte · whole milk only', featured: true },
-    ] },
+      { name: 'Sweater Weather', desc: 'Butter pecan syrup latte · whole milk only', featured: true } ] },
   {
     id: 'brunch',
     category: 'breakfast',
@@ -185,8 +173,7 @@ export const menuSections = [
       { name: 'Seven Lakes', desc: 'Two eggs, steak, chorizo, bacon, peppers & cheddar', price: '16.00', featured: true },
       { name: 'Side Bacon Extra', price: '4.00' },
       { name: 'Side Home Fries', price: '3.50' },
-      { name: 'Side Avocado', price: '3.00' },
-    ] },
+      { name: 'Side Avocado', price: '3.00' } ] },
   {
     id: 'omelette',
     category: 'breakfast',
@@ -198,8 +185,7 @@ export const menuSections = [
       { name: 'Calafate Heat', desc: 'Red peppers, jalapeños, onions, cheddar, chorizo & spicy corn', price: '15.00', featured: true },
       { name: 'Villa Traful', desc: 'Ham, cheese, tomato, avocado, scallions & bacon', price: '15.00' },
       { name: 'Andino', desc: 'Spinach, onion, mushroom & cheese', price: '15.00' },
-      { name: 'Fitz Roy', desc: 'Basil, tomato, mozzarella, red onion & olive oil', price: '15.00' },
-    ] },
+      { name: 'Fitz Roy', desc: 'Basil, tomato, mozzarella, red onion & olive oil', price: '15.00' } ] },
   {
     id: 'pancakes',
     category: 'breakfast',
@@ -208,10 +194,9 @@ export const menuSections = [
     items: [
       { name: 'Buttermilk Plain', price: '12.00' },
       { name: 'Blueberry', desc: 'Served with blueberry jam', price: '14.00' },
-      { name: 'Nutella & Banana', price: '14.00', featured: true, image: '/assets/food/breakfast-pancakes.jpg' },
+      { name: 'Nutella & Banana', price: '14.00', featured: true },
       { name: 'Red Berries', price: '14.00' },
-      { name: 'Buttermilk with Bacon & Eggs', price: '15.00' },
-    ] },
+      { name: 'Buttermilk with Bacon & Eggs', price: '15.00' } ] },
   {
     id: 'quiches',
     category: 'breakfast',
@@ -220,8 +205,7 @@ export const menuSections = [
       { name: 'Lorraine', desc: 'Cheese, egg & bacon', price: '14.00' },
       { name: 'Spinach & Cheese', price: '14.00' },
       { name: 'Ham & Cheese', price: '14.00' },
-      { name: 'Tomato, Mozzarella & Basil', price: '14.00' },
-    ] },
+      { name: 'Tomato, Mozzarella & Basil', price: '14.00' } ] },
   {
     id: 'breakfast-sandwiches',
     category: 'breakfast',
@@ -234,41 +218,38 @@ export const menuSections = [
       { name: 'Taylor Ham, Egg & Cheese', price: '12.00' },
       { name: 'Grilled Cheese', price: '8.00' },
       { name: 'Chipa Sandwich', desc: 'Ham & cheese · gluten free', price: '13.00', featured: true },
-      { name: 'Egg & Cheese Sandwich', price: '10.00' },
-    ] },
+      { name: 'Egg & Cheese Sandwich', price: '10.00' } ] },
   {
     id: 'native-breakfast',
     category: 'breakfast',
     title: 'The Native Breakfast',
     items: [
-      { name: 'The Native Breakfast', desc: 'Skirt steak, eggs Benedict, bacon, avocado, home fries & toast', price: '33.00', featured: true },
-    ] },
+      { name: 'The Native Breakfast', desc: 'Skirt steak, eggs Benedict, bacon, avocado, home fries & toast', price: '33.00', featured: true } ] },
   {
     id: 'toast',
     category: 'toast',
     title: 'Toast Selection',
     note: 'Available until 3 PM',
     items: [
-      { name: 'Avocado Toast', desc: 'Mixed greens, cherry tomatoes & smashed avocado on homemade toast', price: '15.00', image: '/assets/food/post_11_DdJld8VlbYY_3.jpg' },
+      { name: 'Avocado Toast', desc: 'Mixed greens, cherry tomatoes & smashed avocado on homemade toast', price: '15.00' },
       { name: 'Smoked Salmon', desc: 'French toast, cream cheese, smoked salmon & mixed greens', price: '16.00' },
       { name: 'Prosciutto & Burrata', desc: 'French toast, mixed greens, prosciutto, burrata & balsamic glaze', price: '14.00' },
       { name: 'Lavender Honey Ricotta', desc: 'French toast topped with ricotta, honey & lavender flowers', price: '14.00', featured: true },
       { name: 'Nutella and Banana', price: '14.00' },
       { name: 'Cinnamon Apple', desc: 'Warm spiced apples & maple syrup', price: '15.00' },
       { name: 'Mango Coconut', desc: 'Coconut cream, fresh mango & coconut flakes', price: '15.00' },
-      { name: 'Matcha Dream', desc: 'Matcha cream & caramelized banana', price: '15.00', featured: true, image: '/assets/food/post_11_DdJld8VlbYY_4.jpg' },
+      { name: 'Matcha Dream', desc: 'Matcha cream & caramelized banana', price: '15.00', featured: true },
       { name: 'Berry Bliss', desc: 'Cream cheese, strawberries, blueberries, raspberries, blackberries & honey', price: '16.00', featured: true },
       { name: 'Sunny Peach', desc: 'Feta cheese, honey & grilled peaches', price: '15.00' },
       { name: 'Fresh Start', desc: 'Lettuce, tomato, avocado, poached eggs & balsamic', price: '17.00' },
       { name: 'Rustic Burrata', desc: 'Mixed greens, burrata, spicy grilled chicken, cherry tomatoes & honey glaze', price: '18.00', featured: true },
-      { name: 'Burrata & Blueberries', price: '14.00' },
-    ] },
+      { name: 'Burrata & Blueberries', price: '14.00' } ] },
   {
     id: 'bakery',
     category: 'bakery',
     title: 'All Day Bakery',
     items: [
-      { name: 'Butter Croissant', price: '3.25', image: '/assets/food/post_09_DdOkEx8laAA_0.jpg' },
+      { name: 'Butter Croissant', price: '3.25' },
       { name: 'Almond Croissant', price: '4.00' },
       { name: 'Pain au Chocolat', price: '3.75' },
       { name: 'Cinnamon Rolls', price: '3.50' },
@@ -283,9 +264,8 @@ export const menuSections = [
       { name: 'Cake Pops', price: '2.50' },
       { name: 'Cookies', price: '3.00' },
       { name: 'Cookie of the Week', desc: 'Ask about this week’s flavor', price: '3.70' },
-      { name: 'Cake Portion', price: '12.00', image: '/assets/food/post_04_DdZapuWyGLG.jpg', featured: true },
-      { name: 'Blueberry Cheesecake', desc: 'Made in-house by Valentina', price: '12.00', featured: true, image: '/assets/food/post_04_DdZapuWyGLG.jpg' },
-    ] },
+      { name: 'Cake Portion', price: '12.00', featured: true },
+      { name: 'Blueberry Cheesecake', desc: 'Made in-house by Valentina', price: '12.00', featured: true } ] },
   {
     id: 'bowls',
     category: 'bakery',
@@ -295,8 +275,7 @@ export const menuSections = [
       { name: 'Option 1', desc: 'Granola, blueberries, strawberries & honey', price: '14.00', priceLabel: 'Açaí / Mango' },
       { name: 'Option 2', desc: 'Banana, pineapple, coconut flakes & honey', price: '14.00' },
       { name: 'Option 3', desc: 'Nutella, banana, strawberry, coconut flakes & honey', price: '14.00' },
-      { name: 'Option 4', desc: 'Chocolate protein, granola, banana, peanut butter & honey', price: '14.00' },
-    ] },
+      { name: 'Option 4', desc: 'Chocolate protein, granola, banana, peanut butter & honey', price: '14.00' } ] },
   {
     id: 'salads-soup',
     category: 'bakery',
@@ -307,8 +286,7 @@ export const menuSections = [
       { name: 'Mediterranean', desc: 'Mixed greens, prosciutto, burrata, cherry tomato, balsamic & walnuts', price: '15.00', featured: true },
       { name: 'Nativa Salad', desc: 'Mixed greens, almonds, mint, strawberry, mango, feta & honey balsamic', price: '15.00', featured: true },
       { name: 'Add Chicken', price: '5.00' },
-      { name: 'Add Steak', price: '7.00' },
-    ] },
+      { name: 'Add Steak', price: '7.00' } ] },
   {
     id: 'kids',
     category: 'bakery',
@@ -316,8 +294,7 @@ export const menuSections = [
     items: [
       { name: 'Mac & Cheese', price: '8.00' },
       { name: 'Grilled Cheese', price: '8.00' },
-      { name: 'Chicken Nuggets', price: '12.00' },
-    ] },
+      { name: 'Chicken Nuggets', price: '12.00' } ] },
   {
     id: 'sides',
     category: 'lunch',
@@ -328,8 +305,7 @@ export const menuSections = [
       { name: 'Grilled Vegetables', price: '10.00' },
       { name: 'Broccoli', price: '8.00' },
       { name: 'Yellow Rice', price: '7.00' },
-      { name: 'Green Beans', price: '8.00' },
-    ] },
+      { name: 'Green Beans', price: '8.00' } ] },
   {
     id: 'sandwiches',
     category: 'lunch',
@@ -337,10 +313,9 @@ export const menuSections = [
     note: 'Include French fries',
     items: [
       { name: "Nano’s Delight", desc: 'Focaccia, mixed greens, tomato, aioli, prosciutto, fresh mozzarella & basil', price: '19.00', featured: true },
-      { name: 'Chipotle Crush', desc: 'Roll, grilled chicken, lettuce, tomato, onion, avocado & chipotle sauce', price: '21.00', featured: true, image: '/assets/food/post_11_DdJld8VlbYY_5.jpg' },
+      { name: 'Chipotle Crush', desc: 'Roll, grilled chicken, lettuce, tomato, onion, avocado & chipotle sauce', price: '21.00', featured: true },
       { name: 'The Ranch', desc: 'Focaccia, steak, red & green peppers, onions, mozzarella & mayonnaise', price: '23.00' },
-      { name: 'Spicy Route', desc: 'Spicy grilled chicken, tomato, lettuce, jalapeños, peppers, Jack cheese & garlic', price: '21.00' },
-    ] },
+      { name: 'Spicy Route', desc: 'Spicy grilled chicken, tomato, lettuce, jalapeños, peppers, Jack cheese & garlic', price: '21.00' } ] },
   {
     id: 'wraps',
     category: 'lunch',
@@ -349,8 +324,7 @@ export const menuSections = [
     items: [
       { name: 'Tropical', desc: 'Lettuce, tomato, avocado, pineapple, grilled chicken & raspberry dressing', price: '18.00' },
       { name: 'Caesar', desc: 'Lettuce, Parmesan & grilled chicken', price: '18.00' },
-      { name: 'BLT', desc: 'Lettuce, tomato & bacon', price: '17.00' },
-    ] },
+      { name: 'BLT', desc: 'Lettuce, tomato & bacon', price: '17.00' } ] },
   {
     id: 'quesadillas',
     category: 'lunch',
@@ -359,8 +333,7 @@ export const menuSections = [
       { name: 'Cheese', price: '14.00' },
       { name: 'Veggie', price: '14.00' },
       { name: 'Chicken', price: '16.00' },
-      { name: 'Steak', price: '17.00' },
-    ] },
+      { name: 'Steak', price: '17.00' } ] },
   {
     id: 'apps',
     category: 'lunch',
@@ -371,20 +344,18 @@ export const menuSections = [
       { name: 'Gluten-Free Empanadas', desc: 'Beef, chicken, or spinach & cheese', price: '4.50', priceLabel: 'each' },
       { name: 'Chicken Wings', desc: '6 pcs · BBQ, Buffalo or Teriyaki', price: '17.00' },
       { name: 'Chicken Kebab', price: '18.00' },
-      { name: 'Beef Kebab', price: '19.50' },
-    ] },
+      { name: 'Beef Kebab', price: '19.50' } ] },
   {
     id: 'large-plates',
     category: 'lunch',
     title: 'Large Plates',
     items: [
-      { name: 'Chicken Fajitas', desc: 'Sizzling with peppers & onions on homemade tortillas · rice, pico, sour cream, guacamole & black beans', price: '28.00', featured: true, image: '/assets/food/post_05_DdXe_d-jIN8_0.jpg' },
-      { name: 'Steak Fajitas', desc: 'Sizzling with peppers & onions on homemade tortillas · rice, pico, sour cream, guacamole & black beans', price: '30.00', featured: true, image: '/assets/food/post_05_DdXe_d-jIN8_1.jpg' },
+      { name: 'Chicken Fajitas', desc: 'Sizzling with peppers & onions on homemade tortillas · rice, pico, sour cream, guacamole & black beans', price: '28.00', featured: true },
+      { name: 'Steak Fajitas', desc: 'Sizzling with peppers & onions on homemade tortillas · rice, pico, sour cream, guacamole & black beans', price: '30.00', featured: true },
       { name: 'Cajun Chicken Bowl', desc: 'Grilled chicken, rice, beans, lettuce, sour cream, spicy corn, avocado & pico', price: '28.00' },
       { name: 'Skirt Steak', desc: 'Served with broccoli and French fries', price: '45.00' },
       { name: 'Ribeye', desc: 'Served with mashed potatoes and green beans', price: '45.00' },
-      { name: 'Chicken Breast', desc: 'Served with grilled seasonal vegetables & yellow rice', price: '28.00' },
-    ] },
+      { name: 'Chicken Breast', desc: 'Served with grilled seasonal vegetables & yellow rice', price: '28.00' } ] },
   {
     id: 'september',
     category: 'cocktails',
@@ -397,8 +368,7 @@ export const menuSections = [
       { name: 'Orange Spice Margarita', desc: 'Orange, Reposado tequila, cinnamon, agave & Cointreau', price: '15.00', featured: true },
       { name: 'Pumpkin Patch Mule', desc: 'Vanilla vodka, pumpkin, ginger beer', price: '15.00' },
       { name: 'Salted Caramel Espresso Martini', desc: 'Vanilla vodka, Baileys, Kahlúa, salted caramel & espresso', price: '18.00', featured: true },
-      { name: 'Maple Old Fashioned', desc: 'Bourbon, maple, bitter & orange', price: '15.00' },
-    ] },
+      { name: 'Maple Old Fashioned', desc: 'Bourbon, maple, bitter & orange', price: '15.00' } ] },
   {
     id: 'classic-cocktails',
     category: 'cocktails',
@@ -415,8 +385,7 @@ export const menuSections = [
       { name: 'Lemon Drop Martini', price: '16.00' },
       { name: 'French Martini', price: '17.00' },
       { name: 'Bloody Mary', price: '15.00' },
-      { name: 'Mimosa', price: '14.00' },
-    ] },
+      { name: 'Mimosa', price: '14.00' } ] },
   {
     id: 'mocktails',
     category: 'cocktails',
@@ -426,8 +395,7 @@ export const menuSections = [
       { name: 'Mango Breeze', desc: 'Tajín, mango & ginger beer', price: '10.00' },
       { name: 'Citrus Theory', desc: 'Orange, tangerine, vanilla & sparkling water', price: '10.00' },
       { name: 'Guava Rush', desc: 'Guava nectar, grapefruit soda, sage & lemon', price: '10.00' },
-      { name: 'Orange Sunset', desc: 'Orange juice, pineapple juice & grenadine', price: '10.00' },
-    ] },
+      { name: 'Orange Sunset', desc: 'Orange juice, pineapple juice & grenadine', price: '10.00' } ] },
   {
     id: 'wine',
     category: 'wine-beer',
@@ -444,8 +412,7 @@ export const menuSections = [
       { name: 'Alexander Brown Pinot Noir', price: '9.00', priceAlt: '35.00', priceLabel: 'glass / bottle' },
       { name: 'Terrazas Malbec Reserva', price: '10.00', priceAlt: '37.00', priceLabel: 'glass / bottle' },
       { name: 'The Owl & The Dust Devil (Blend)', price: '60.00', priceLabel: 'bottle' },
-      { name: 'Sangría Red / White', desc: 'Large 38 · Small 24 · Glass 9.50', price: '9.50' },
-    ] },
+      { name: 'Sangría Red / White', desc: 'Large 38 · Small 24 · Glass 9.50', price: '9.50' } ] },
   {
     id: 'beer',
     category: 'wine-beer',
@@ -469,8 +436,7 @@ export const menuSections = [
       { name: 'Quilmes (Argentina)', price: '6.00', featured: true },
       { name: 'Michelob Ultra', price: '6.00' },
       { name: 'Non-Alcoholic Corona', price: '5.00' },
-      { name: 'Non-Alcoholic Heineken', price: '5.00' },
-    ] },
+      { name: 'Non-Alcoholic Heineken', price: '5.00' } ] },
   {
     id: 'spirits',
     category: 'spirits',
@@ -489,8 +455,7 @@ export const menuSections = [
       { name: 'Macallan 12', price: '20.00', priceAlt: '36.00' },
       { name: 'Hendrick’s Gin', price: '13.00', priceAlt: '23.00' },
       { name: 'Kahlúa', price: '9.00', priceAlt: '16.00' },
-      { name: 'Baileys', price: '11.00', priceAlt: '19.00' },
-    ] },
+      { name: 'Baileys', price: '11.00', priceAlt: '19.00' } ] },
   {
     id: 'beverages',
     category: 'cool',
@@ -499,9 +464,7 @@ export const menuSections = [
       { name: 'San Pellegrino', price: '3.00' },
       { name: 'Bottle of Water', price: '3.00' },
       { name: 'Natural Orange Juice', price: '10.00' },
-      { name: 'Juice', desc: 'Orange, apple or cranberry', price: '3.00' },
-    ] },
-];
+      { name: 'Juice', desc: 'Orange, apple or cranberry', price: '3.00' } ] } ];
 
 export const featuredItems = menuSections
   .flatMap((section) =>

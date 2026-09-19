@@ -4,6 +4,29 @@ const header = document.querySelector('.site-header');
 const toggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav-links');
 const progress = document.querySelector('[data-scroll-progress]');
+const navHome = header || document.body;
+const mobileQuery = window.matchMedia('(max-width: 860px)');
+
+function placeNav(isMobile) {
+  if (!nav) return;
+  if (isMobile) {
+    if (nav.parentElement !== document.body) document.body.appendChild(nav);
+  } else if (header && nav.parentElement !== header) {
+    // Keep toggle first, then brand order: insert nav after toggle/brand
+    header.appendChild(nav);
+  }
+}
+
+placeNav(mobileQuery.matches);
+mobileQuery.addEventListener('change', (e) => {
+  placeNav(e.matches);
+  if (!e.matches) {
+    nav?.classList.remove('is-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    document.body.classList.remove('nav-open');
+    document.body.style.overflow = '';
+  }
+});
 
 function onScroll() {
   if (!header) return;
@@ -22,6 +45,7 @@ window.addEventListener('scroll', onScroll, { passive: true });
 
 if (toggle && nav) {
   const setOpen = (open) => {
+    if (!mobileQuery.matches) return;
     nav.classList.toggle('is-open', open);
     toggle.setAttribute('aria-expanded', String(open));
     document.body.classList.toggle('nav-open', open);
@@ -57,7 +81,6 @@ if (reveals.length && 'IntersectionObserver' in window) {
   reveals.forEach((el) => el.classList.add('is-visible'));
 }
 
-/* Soft fade-in for images as they load */
 document.querySelectorAll('img[data-fade]').forEach((img) => {
   const show = () => img.classList.add('is-loaded');
   if (img.complete) show();

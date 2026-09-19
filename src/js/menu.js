@@ -32,20 +32,15 @@ function renderSections(activeCategory = 'all') {
     .map((section) => {
       const items = section.items
         .map((item, index) => {
-          const hasImage = Boolean(item.image);
-          const thumb = hasImage
-            ? `<img class="menu-thumb" src="${item.image}" alt="" loading="lazy" />`
-            : `<div class="menu-thumb placeholder" aria-hidden="true"></div>`;
           const featured = item.featured ? `<span class="tag-featured">Signature</span>` : '';
           const desc = item.desc ? `<p>${item.desc}</p>` : '';
           return `
             <button
               type="button"
-              class="menu-item ${hasImage ? 'has-photo' : ''}"
+              class="menu-item menu-item-text"
               data-section="${section.id}"
               data-index="${index}"
             >
-              ${thumb}
               <div class="menu-item-body">
                 <h3>${item.name}${featured}</h3>
                 ${desc}
