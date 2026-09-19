@@ -762,15 +762,23 @@ body.nav-open .nav-toggle {
 
 .menu-filters {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-wrap: nowrap;
+  gap: 0.55rem;
   position: sticky;
   top: var(--nav-h);
   z-index: 20;
   padding: 0.85rem 0;
-  background: linear-gradient(180deg, rgba(250, 247, 241, 0.95), rgba(250, 247, 241, 0.85));
-  backdrop-filter: blur(10px);
+  background: #faf7f1;
   margin-bottom: 1.5rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  scroll-snap-type: x proximity;
+  mask-image: none;
+  -webkit-mask-image: none;
+}
+.menu-filters::-webkit-scrollbar {
+  display: none;
 }
 
 .filter-btn {
